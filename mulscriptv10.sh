@@ -59,7 +59,7 @@ push_image() {
     fi
 
     if podman pull "$source_image" --tls-verify=false; then
-        podman tag "$source_image" "$destination_image"
+        #podman tag "$source_image" "$destination_image"
         if podman push "$destination_image" --tls-verify=false; then
             echo "$source_image was migrated successfully." | tee -a $success_log
             podman rmi "$source_image" "$destination_image"
