@@ -1,22 +1,15 @@
 #!/bin/bash
 
 # ---- INITIAL SETUP ----
-#source links
-#OCP3 270: docker-registry-default.roanprd-openshift.intra.absa.co.za
-#OCP3 SDC: docker-registry-default.roaprd-openshift.intra.absa.co.za
-#OKD 270: default-route-openshift-image-registry.apps.aroocp-lunar.intra.absa.co.za
-#OKD SDC: 
-#OCP4 270: default-route-openshift-image-registry.apps.ocp-aronprd.intra.absa.co.za
-#OCP4 SDC: default-route-openshift-image-registry.apps.ocp-aroprd.intra.absa.co.za
 
 # Base URLs for source and destination registries
-source_login_registry="default-route-openshift-image-registry.apps.ocp-aronprd.intra.absa.co.za"
-destination_login_registry="registry-quay-global-registry.apps.ocp-aronprd.intra.absa.co.za"
+source_login_registry=""
+destination_login_registry=""
 
 # Group names for source and destination registries
 #NAMESPACES=("namespace1" "namespace2")
-NAMESPACES=("aro-chat-prod")
-destination_group="aro-group"
+NAMESPACES=("")
+destination_group=""
 
 success_log="success_log.txt"
 failure_log="failure_log.txt"
