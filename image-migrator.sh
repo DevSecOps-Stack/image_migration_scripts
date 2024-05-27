@@ -1,4 +1,3 @@
-analyze the below script
 #!/bin/bash
 
 # ---- INITIAL SETUP ----
